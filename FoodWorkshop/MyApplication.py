@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         foodquantity=int(self.quantity.currentText())
         delivery=int(self.delivery.currentText())
         total=price*foodquantity+delivery
-        self.displayText.setText("ยอดชำระเงิน "+str(total)+" บาท")
+        self.displayText.setText(f"ยอดชำระเงิน {str(total)} บาท")
 
 
 

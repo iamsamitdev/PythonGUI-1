@@ -71,7 +71,7 @@ class Ui_MainWindow(object):
         word=self.inputText.text()
         translator=Translator()
         result=translator.translate(word,dest='th')
-        self.label_2.setText("ความหมาย คือ "+result.text)
+        self.label_2.setText(f"ความหมาย คือ {result.text}")
 
 if __name__ == "__main__":
     import sys

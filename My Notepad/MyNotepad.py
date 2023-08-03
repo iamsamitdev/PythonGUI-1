@@ -126,8 +126,7 @@ class Ui_MainWindow(object):
             print(e)
 
     def openFile(self):
-        path= QFileDialog.getOpenFileName()
-        if path :
+        if path := QFileDialog.getOpenFileName():
             try:
                 with open(path[0],'r',encoding='utf-8') as f:
                     text=f.read()

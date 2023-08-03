@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         #self.inputTxt.setText("")
         for i in range(1,13):
             cal=int(result)*i
-            self.displayText.appendPlainText(result+"x"+str(i)+"="+str(cal))
+            self.displayText.appendPlainText(f"{result}x{str(i)}={str(cal)}")
 
 
 import MyImage_rc
